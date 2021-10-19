@@ -1,8 +1,55 @@
+:root {
+  --heading-font-family: "Montserrat", sans-serif;
+  --default-font-family: "Nanum Gothic", sans-serif;
+  --brand-color: rgb(17, 119, 88);
+  --secondary-color: rgb(191, 255, 234);
+}
+
+body {
+  font-family: var(--default-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+}
+
 h1 {
-  font-family: "Montserrat", sans-serif;
+  font-size: 10vw;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3vw;
+}
+
+.hero {
+  padding: 80px 0px;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.hero h2 {
+  padding-bottom: 60px;
+}
+
+.hero a {
+  font-family: var(--heading-font-family);
+  color: white;
+  background-color: var(--brand-color);
+  text-decoration: none;
+  padding: 20px 25px;
+  border-radius: 4px;
+  font-size: 2vw;
   font-weight: medium;
 }
 
-p {
-  font-family: "Nanum Gothic", sans-serif;
+.hero a:hover {
+  color: var(--brand-color);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--brand-color);
 }
