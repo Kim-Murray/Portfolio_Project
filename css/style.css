@@ -31,7 +31,7 @@ h2 {
 }
 
 h2.page-description {
-  font-size: 2vw;
+  font-size: 3vw;
   margin: 40px 0px;
   text-align: center;
 }
@@ -90,7 +90,7 @@ a {
 
 .app-link {
   margin: 0vw 1vw 0vw 0vw;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 .app-link:hover {
@@ -100,7 +100,6 @@ a {
 @media (max-width: 576px) {
   .app-description {
     text-align: center;
-    margin: 20px 20px 20px 20px;
   }
 
   .recent-project-image {
@@ -109,12 +108,18 @@ a {
 
   .recent-project-description {
     text-align: center;
-    font-size: 2vw;
+    font-size: 3vw;
+    margin: 20px 0px;
   }
 
   h2.page-description {
-    font-size: 2vw;
+    font-size: 4vw;
     margin: 20px 0px 10px 0px;
     text-align: center;
+  }
+
+  .app-link {
+    margin: 0vw 1vw 0vw 0vw;
+    font-size: 3vw;
   }
 }
