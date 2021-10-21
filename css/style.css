@@ -30,10 +30,21 @@ h2 {
   font-size: 3vw;
 }
 
-p {
+h2.page-description {
+  font-size: 2vw;
   margin: 40px 0px;
   text-align: center;
-  font-size: 2vw;
+}
+
+h3 {
+  font-size: 6vw;
+  font-weight: medium;
+}
+
+p {
+  font-size: 1.8vw;
+  margin: 0vw 0vw 4vw 0vw;
+  text-align: left;
 }
 
 a {
@@ -48,7 +59,7 @@ a {
 }
 
 .hero {
-  padding: 80px 0px;
+  padding: 10% 0;
   text-align: center;
   background-color: var(--background-color);
 }
@@ -74,23 +85,36 @@ a {
 
 .recent-project-image {
   max-width: 100%;
-}
-
-.recent-project-description {
-  text-align: left;
-  font-size: 1.5vw;
-  margin: 0px 0px 4vw 0px;
-}
-
-.test {
-  text-align: left;
+  padding-top: 20px;
 }
 
 .app-link {
-  margin: none;
+  margin: 0vw 1vw 0vw 0vw;
   font-size: 1vw;
 }
 
 .app-link:hover {
   background-color: white;
+}
+
+@media (max-width: 576px) {
+  .app-description {
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+  }
+
+  .recent-project-image {
+    display: none;
+  }
+
+  .recent-project-description {
+    text-align: center;
+    font-size: 2vw;
+  }
+
+  h2.page-description {
+    font-size: 2vw;
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+  }
 }
