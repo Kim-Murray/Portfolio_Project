@@ -1,10 +1,11 @@
 :root {
   --heading-font-family: "Montserrat", sans-serif;
   --default-font-family: "Nanum Gothic", sans-serif;
-  --brand-color: rgb(17, 119, 88);
+  --brand-color: rgb(34, 99, 94);
+  --secondary-light-color: #aa4362;
   --secondary-color: #771130;
-  --background-color: rgb(191, 255, 234);
-  --box-shadow: 0px 4px 10px rgba(17, 119, 88, 0.5);
+  --background-color: rgb(225, 245, 245);
+  --box-shadow: 0px 4px 10px rgba(34, 99, 94, 0.5);
 }
 
 body {
@@ -22,16 +23,17 @@ h6 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 70px;
   font-weight: bold;
+  color: #aa4362;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 h2.page-description {
-  font-size: 30px;
+  font-size: 25px;
   margin: 40px 0px;
   text-align: center;
 }
@@ -47,20 +49,27 @@ p {
 }
 
 a {
+  display: inline-flex;
   font-family: var(--heading-font-family);
   color: white;
-  background-color: var(--brand-color);
+  background-color: var(--secondary-light-color);
+  border: 1px solid var(--secondary-light-color);
   text-decoration: none;
-  padding: 15px 25px;
+  padding: 20px 25px;
   border-radius: 4px;
   font-size: 20px;
   font-weight: medium;
 }
 
 .hero {
-  padding: 10% 0;
+  padding: 30px 0px;
   text-align: center;
   background-color: var(--background-color);
+}
+
+.hero h2 {
+  padding-bottom: 10px;
+  margin: none;
 }
 
 .title {
@@ -69,13 +78,9 @@ a {
   margin: 0 auto;
 }
 
-.hero h2 {
-  padding-bottom: 6%;
-}
-
 .hero a {
   box-shadow: var(--box-shadow);
-  margin: 0vw 3vw;
+  margin: 10px 20px;
 }
 
 .button-link:hover {
@@ -84,17 +89,23 @@ a {
   border: 1px solid var(--secondary-color);
 }
 
+.about-btn {
+  padding: 20px 35px;
+}
+
 .recent-project {
-  margin: 60px 0px;
+  margin: 10px 0px 60px 0px;
 }
 
 .recent-project-image {
   max-width: 100%;
+  border-radius: 4px;
 }
 
 .app-link {
   font-size: 18px;
   display: inline-flex;
+  background-color: var(--brand-color);
 }
 
 .app-link:hover {
@@ -102,8 +113,12 @@ a {
 }
 
 @media (max-width: 768px) {
+  .h2 {
+    font-size: 15px;
+  }
+
   .recent-project {
-    margin: 40px 0px;
+    margin: 10px 0px 20px 0px;
   }
 
   .app-description {
@@ -116,7 +131,7 @@ a {
 
   .recent-project-description {
     text-align: center;
-    font-size: 3vw;
+    font-size: 20px;
     margin: 20px 0px;
   }
 
@@ -128,5 +143,19 @@ a {
 
   .app-link {
     margin: 20px 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  .hero a {
+    font-size: 15px;
   }
 }
