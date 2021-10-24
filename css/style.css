@@ -25,7 +25,7 @@ h6 {
 h1 {
   font-size: 70px;
   font-weight: bold;
-  color: #aa4362;
+  color: var(--brand-color);
 }
 
 h2 {
@@ -52,8 +52,8 @@ a {
   display: inline-flex;
   font-family: var(--heading-font-family);
   color: white;
-  background-color: var(--secondary-light-color);
-  border: 1px solid var(--secondary-light-color);
+  background-color: var(--brand-color);
+  border: 1px solid var(--brand-color);
   text-decoration: none;
   padding: 20px 25px;
   border-radius: 4px;
@@ -84,9 +84,9 @@ a {
 }
 
 .button-link:hover {
-  color: var(--secondary-color);
+  color: var(--secondary-light-color);
   background-color: var(--background-color);
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--secondary-light-color);
 }
 
 .about-btn {
