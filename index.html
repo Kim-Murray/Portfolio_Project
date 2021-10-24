@@ -27,44 +27,84 @@
   </head>
   <body>
     <div class="hero">
-      <h1>Kim Murray</h1>
-      <h2>Front-end developer based in London</h2>
-      <a href="#" class="button-link">About</a>
-      <a href="#" class="button-link">Contact</a>
+      <div class="title">
+        <h1>Kim Murray</h1>
+        <h2>Front-end developer based in London</h2>
+        <a href="#" class="button-link">About</a>
+        <a href="#" class="button-link">Contact</a>
+      </div>
     </div>
     <hr />
-    <h2 class="page-description">
-      My most recent project built during my workshops with SheCodes
-    </h2>
+    <div class="container">
+      <h2 class="page-description">
+        My most recent projects built during my workshops with SheCodes
+      </h2>
+    </div>
     <hr />
-    <div class="recent-project">
-      <div class="row">
-        <div class="col-sm-6">
-          <img
-            src="/images/WeatherApp.png"
-            alt="Weather App"
-            class="recent-project-image"
-          />
+    <div class="projects">
+      <div class="container-fluid">
+        <div class="recent-project">
+          <div class="row">
+            <div class="col-md-6 align-self-center">
+              <img
+                src="/images/WeatherApp.png"
+                alt="Weather App"
+                class="recent-project-image"
+              />
+            </div>
+            <div class="col-md-6 app-description">
+              <h3>Weather App</h3>
+              <p class="recent-project-description">
+                This weather app was built using Vanilla Javascript and
+                Bootstrap. It makes use of the API at openweathermap.org in
+                order to display the local and predicted weather for a chosen
+                city. There is also a capability to select the weather forecast
+                for your current location.
+              </p>
+              <a
+                href="https://sleepy-gates-95d0f5.netlify.app/"
+                class="button-link app-link"
+                >Weather App</a
+              >
+              <a
+                href="https://github.com/Kim-Murray/weather-app"
+                class="button-link app-link"
+                >Source Code</a
+              >
+            </div>
+          </div>
         </div>
-        <div class="col-sm-6 app-description">
-          <h3>Weather App</h3>
-          <p class="recent-project-description">
-            This weather app was built using Vanilla Javascript and Bootstrap.
-            It makes use of the API at openweathermap.org in order to display
-            the local and predicted weather for a chosen city. There is also a
-            capability to select the weather forecast for your current location.
-          </p>
-          <div>
-            <a
-              href="https://sleepy-gates-95d0f5.netlify.app/"
-              class="button-link app-link"
-              >Weather App</a
-            >
-            <a
-              href="https://github.com/Kim-Murray/weather-app"
-              class="button-link app-link"
-              >Source Code</a
-            >
+      </div>
+
+      <div class="container-fluid">
+        <div class="recent-project">
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                src="/images/RobinHobb.png"
+                alt="Realm of the elderlings fan page"
+                class="recent-project-image"
+              />
+            </div>
+            <div class="col-md-6 app-description">
+              <h3>Fan Page</h3>
+              <p class="recent-project-description">
+                This fan page of Robin Hobb's The Realm of the Elderlings was
+                built in HTML and CSS.
+              </p>
+              <div>
+                <a
+                  href="https://sleepy-gates-95d0f5.netlify.app/"
+                  class="button-link app-link"
+                  >Weather App</a
+                >
+                <a
+                  href="https://github.com/Kim-Murray/weather-app"
+                  class="button-link app-link"
+                  >Source Code</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
