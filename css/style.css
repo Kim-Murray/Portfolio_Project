@@ -13,6 +13,10 @@ body {
   padding-bottom: 20px;
 }
 
+.page-container {
+  margin: 40px;
+}
+
 h1,
 h2,
 h3,
@@ -44,6 +48,11 @@ h3 {
   font-weight: medium;
 }
 
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 p {
   font-size: 18px;
   text-align: left;
@@ -58,8 +67,14 @@ a {
   text-decoration: none;
   padding: 20px 25px;
   border-radius: 4px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: medium;
+}
+
+a:hover {
+  color: var(--secondary-light-color);
+  background-color: white;
+  border: 1px solid var(--secondary-light-color);
 }
 
 .hero {
@@ -85,9 +100,7 @@ a {
 }
 
 .button-link:hover {
-  color: var(--secondary-light-color);
   background-color: var(--background-color);
-  border: 1px solid var(--secondary-light-color);
 }
 
 .about-btn {
@@ -98,23 +111,9 @@ a {
   margin: 10px 0px 60px 0px;
 }
 
-.recent-project-image {
+.project-image {
   max-width: 100%;
   border-radius: 4px;
-}
-
-.app-link {
-  font-size: 18px;
-  display: inline-flex;
-  background-color: var(--brand-color);
-}
-
-.app-link:hover {
-  background-color: white;
-}
-
-.about-page {
-  padding: 30px 0px;
 }
 
 .img-profile {
