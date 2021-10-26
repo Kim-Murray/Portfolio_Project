@@ -237,6 +237,10 @@ a:hover {
     font-size: 15px;
   }
 
+  .page-container {
+    padding-top: 20px;
+  }
+
   .logo {
     max-width: 50px;
     margin-left: 5px;
