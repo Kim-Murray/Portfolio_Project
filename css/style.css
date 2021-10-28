@@ -2,8 +2,6 @@
   --heading-font-family: "Montserrat", sans-serif;
   --default-font-family: "Nanum Gothic", sans-serif;
   --brand-color: rgb(34, 99, 94);
-  --secondary-light-color: #aa4362;
-  --secondary-color: #771130;
   --background-color: rgb(225, 245, 245);
   --box-shadow: 0px 4px 10px rgba(34, 99, 94, 0.5);
 }
@@ -101,13 +99,20 @@ a:hover {
   background-color: var(--background-color);
 }
 
+.button-box {
+  display: flex;
+  justify-content: center;
+}
+
 .button {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   font-family: var(--heading-font-family);
   color: white;
   background-color: var(--brand-color);
   border: 1px solid var(--brand-color);
   text-decoration: none;
+  width: 120px;
   padding: 20px 25px;
   border-radius: 4px;
   font-size: 18px;
@@ -115,9 +120,18 @@ a:hover {
 }
 
 .button:hover {
-  color: var(--secondary-light-color);
+  color: var(--brand-color);
   background-color: white;
-  border: 1px solid var(--secondary-light-color);
+  border: 1px solid var(--brand-color);
+}
+
+.button-app-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.app-link {
+  margin-right: 20px;
 }
 
 .logo {
@@ -267,5 +281,14 @@ a:hover {
 
   a {
     font-size: 14px;
+  }
+
+  .hero {
+    padding: 50px;
+  }
+
+  .button {
+    width: 100px;
+    margin-right: 5px;
   }
 }
