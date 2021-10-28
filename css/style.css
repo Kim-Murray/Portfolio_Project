@@ -253,7 +253,7 @@ a:hover {
 }
 
 .footer-email {
-  font-size: 26px;
+  font-size: 18px;
   color: black;
   font-weight: bold;
   margin-top: 100px;
@@ -265,6 +265,12 @@ a:hover {
   padding: 10px 12px;
   background-color: var(--background-color);
   border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+
+.icons:hover {
+  color: white;
+  background-color: var(--brand-color);
 }
 
 @media (max-width: 576px) {
