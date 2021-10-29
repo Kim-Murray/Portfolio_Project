@@ -247,6 +247,10 @@ a:hover {
   }
 }
 
+.button-project-box {
+  width: 100%;
+}
+
 .footer-links {
   display: block;
   text-align: center;

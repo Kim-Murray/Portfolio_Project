@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About Kim Murray, a front-end developer based in London, UK.  Qualifcations, previous experience and goals for the future.  Links to work already undertaken."
+    />
     <title>About | Kim Murray</title>
 
     <link
@@ -28,16 +32,20 @@
   <body>
     <nav class="navbar">
       <div class="nav-logo">
-        <a href="/"
+        <a href="/" title="Homepage"
           ><img src="/images/KimMurrayLogo.png" alt="Logo" class="logo"
         /></a>
       </div>
       <div class="nav-links">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about.html" class="active-navlink">About</a></li>
-          <li><a href="/work.html">Projects</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/" title="Homepage">Home</a></li>
+          <li>
+            <a href="/about.html" class="active-navlink" title="About Kim"
+              >About</a
+            >
+          </li>
+          <li><a href="/work.html" title="Kim's Projects">Projects</a></li>
+          <li><a href="/contact.html" title="Contact Kim">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -63,7 +71,13 @@
                 at university, she has chosen to continue learning in the hopes
                 of it becoming her career.
               </p>
-              <a href="/work.html" class="button app-link">My projects</a>
+              <div class="button-app-box">
+                <a
+                  href="/work.html"
+                  class="button app-link text-center button-project-box"
+                  >View my projects</a
+                >
+              </div>
             </div>
           </div>
         </div>
