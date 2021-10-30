@@ -16,7 +16,7 @@ body {
 }
 
 .content-container {
-  margin: 40px;
+  margin: 40px 40px 0px 40px;
 }
 
 h1,
@@ -171,7 +171,7 @@ a:hover {
 }
 
 .recent-project {
-  margin: 10px 0px 60px 0px;
+  margin: 10px 0px;
 }
 
 .project-image {
@@ -254,13 +254,13 @@ a:hover {
 .footer-links {
   display: block;
   text-align: center;
+  padding-top: 60px;
 }
 
 .footer-email {
   font-size: 18px;
   color: black;
   font-weight: bold;
-  margin-top: 100px;
 }
 
 .icons {
