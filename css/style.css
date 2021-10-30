@@ -184,6 +184,9 @@ a:hover {
 }
 
 .contact-links {
+  display: block;
+  text-align: center;
+  font-size: 24px;
   text-decoration: underline;
   color: var(--brand-color);
 }
