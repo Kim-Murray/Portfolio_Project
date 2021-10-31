@@ -59,6 +59,7 @@ p {
   font-size: 18px;
   line-height: 35px;
   text-align: left;
+  margin: 0px;
 }
 
 ul {
@@ -192,6 +193,37 @@ a:hover {
   color: var(--brand-color);
 }
 
+.button-project-box {
+  width: 100%;
+}
+
+.footer-links {
+  display: block;
+  text-align: center;
+  padding-top: 60px;
+  margin: 0px 10px;
+}
+
+.footer-email {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+.icons {
+  color: var(--brand-color);
+  font-size: 24px;
+  padding: 10px 12px;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+
+.icons:hover {
+  color: white;
+  background-color: var(--brand-color);
+}
+
 @media (max-width: 992px) {
   .img-profile {
     display: block;
@@ -251,36 +283,6 @@ a:hover {
   }
 }
 
-.button-project-box {
-  width: 100%;
-}
-
-.footer-links {
-  display: block;
-  text-align: center;
-  padding-top: 60px;
-}
-
-.footer-email {
-  font-size: 18px;
-  color: black;
-  font-weight: bold;
-}
-
-.icons {
-  color: var(--brand-color);
-  font-size: 24px;
-  padding: 10px 12px;
-  background-color: var(--background-color);
-  border-radius: 50%;
-  transition: all 100ms ease-in-out;
-}
-
-.icons:hover {
-  color: white;
-  background-color: var(--brand-color);
-}
-
 @media (max-width: 576px) {
   h1 {
     font-size: 50px;
@@ -309,6 +311,10 @@ a:hover {
 }
 
 @media (max-width: 350px) {
+  .content-container {
+    margin: 20px 20px 0px 20px;
+  }
+
   .logo {
     max-width: 35px;
     margin-left: 2px;
@@ -329,5 +335,18 @@ a:hover {
   .button {
     width: 100px;
     margin-right: 5px;
+  }
+
+  .button-project-box {
+    width: 100%;
+  }
+
+  .footer-links {
+    margin: 0px 2px;
+    padding-top: 30px;
+  }
+
+  .contact-links {
+    font-size: 20px;
   }
 }
