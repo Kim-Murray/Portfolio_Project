@@ -75,10 +75,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100vw;
   padding: 2px;
   background-color: white;
   position: fixed;
-  width: 100%;
 }
 
 .nav-background-home {
@@ -133,15 +133,11 @@ h2.page-description {
   text-align: center;
 }
 
-.featured-project {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .featured-project-img {
-  max-width: 50%;
-  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-width: 60%;
+
   border-radius: 4px;
 }
 
@@ -315,8 +311,8 @@ h2.page-description {
     margin-left: 5px;
   }
 
-  li {
-    margin: 0px 10px;
+  .menu-main-item-link {
+    padding: 0 10px;
   }
 
   .hero a {
@@ -334,11 +330,8 @@ h2.page-description {
     margin-left: 2px;
   }
 
-  li {
-    margin: 0px 6px;
-  }
-
-  a {
+  .menu-main-item-link {
+    padding: 0 6px;
     font-size: 14px;
   }
 
