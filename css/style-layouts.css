@@ -1,73 +1,40 @@
 :root {
   --heading-font-family: "Montserrat", sans-serif;
   --default-font-family: "Nanum Gothic", sans-serif;
-  --brand-color: rgb(34, 99, 94);
-  --background-color: rgb(225, 245, 245);
-  --box-shadow: 0px 4px 10px rgba(34, 99, 94, 0.5);
+  --brand-color: rgb(0, 55, 70);
+  --background-color: #bfe5f0;
+  --box-shadow: 0 0.4rem 1rem rgba(0, 55, 70, 0.5);
+  --box-shadow-dark: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 784px) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
   font-family: var(--default-font-family);
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
+}
+
+section {
+  margin-top: 4rem;
 }
 
 .page-container {
-  padding: 60px 0px 10px 0px;
+  padding: 6rem 0 1rem 0;
 }
 
 .content-container {
-  margin: 40px 40px 0px 40px;
+  margin: 4rem 4rem 0 4rem;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--heading-font-family);
-}
-
-h3 {
-  font-size: 40px;
-  font-weight: medium;
-}
-
-h4 {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-p {
-  font-size: 18px;
-  line-height: 35px;
-  text-align: left;
-  margin: 0px;
-}
-
-/* ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-} */
-
-/* li {
-  margin: 0px 20px;
-}
-
-a {
-  font-weight: medium;
-  text-decoration: none;
-
-  color: rgba(0, 0, 0, 0.8);
-} */
-
-/* a:hover {
-  color: var(--brand-color);
-  transition: all 100ms ease-in-out;
-} */
 
 /* Navigation bar */
 
@@ -79,6 +46,7 @@ a {
   padding: 2px;
   background-color: white;
   position: fixed;
+  z-index: 20;
 }
 
 .nav-background-home {
@@ -106,11 +74,15 @@ a {
   transition: all 100ms ease-in-out;
 }
 
+.menu-main-item:last-child {
+  margin-right: 2rem;
+}
+
 .menu-main-item-link {
   display: flex;
   align-items: center;
   height: 100%;
-  padding: 0 20px;
+  padding: 0 2rem;
   border-radius: 2px;
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
@@ -127,10 +99,19 @@ a {
   border: 1px solid var(--brand-color);
 }
 
+/* Hero */
+
+.hero-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Featured project */
 
-h2.page-description {
+h2.section-title {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .featured-project-img {
@@ -141,46 +122,100 @@ h2.page-description {
   border-radius: 4px;
 }
 
-.button-box {
+.featured-project-links {
   display: flex;
   justify-content: center;
 }
 
-.button-app-box {
+/* Project gallery */
+
+.project-gallery {
   display: flex;
-  justify-content: flex-start;
+  margin: 2rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.project-description {
+  max-width: 80%;
+}
+
+.project-link {
+  flex: 0 0 50%;
+  align-self: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.project-img {
+  display: inline-block;
+  max-width: 100%;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-img:hover {
+  transform: translateY(-1rem);
+  box-shadow: var(--box-shadow-dark);
+}
+
+.project-title {
+  margin: 2rem 0 0.5rem 0;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 1rem;
+}
+
+.project-git-link {
+  color: var(--brand-color);
+}
+
+/* Current Project */
+
+.current-project-link {
+  flex: 0 0 70%;
 }
 
 .app-link {
-  margin-right: 20px;
+  text-align: center;
+  margin-right: 2rem;
 }
 
 .logo {
-  max-width: 60px;
+  max-width: 6rem;
   padding: 2px;
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 
 .hero {
-  padding: 80px 0px;
+  padding: 8rem 0;
   text-align: center;
   background-color: var(--background-color);
 }
 
 .hero h2 {
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
   margin: none;
 }
 
 .title {
-  max-width: 600px;
+  max-width: 60rem;
   display: block;
   margin: 0 auto;
 }
 
 .hero a {
   box-shadow: var(--box-shadow);
-  margin: 10px 20px;
+  margin: 1rem 2rem;
 }
 
 .hero-button:hover {
@@ -188,7 +223,7 @@ h2.page-description {
 }
 
 .about-btn {
-  padding: 20px 35px;
+  padding: 2rem 3.5rem;
 }
 
 .img-profile {
@@ -198,7 +233,7 @@ h2.page-description {
 .contact-links {
   display: block;
   text-align: center;
-  font-size: 24px;
+  font-size: 2.4rem;
   text-decoration: underline;
   color: var(--brand-color);
 }
@@ -207,23 +242,28 @@ h2.page-description {
   width: 100%;
 }
 
-.footer-links {
-  display: block;
-  text-align: center;
-  padding-top: 60px;
-  margin: 0px 10px;
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6rem;
+  margin: 0 1rem;
 }
 
 .footer-email {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: black;
   font-weight: bold;
 }
 
-.icons {
+.icon {
   color: var(--brand-color);
-  font-size: 24px;
-  padding: 10px 12px;
+  font-size: 2.4rem;
+  margin: 1rem;
+  padding: 1rem 1rem;
   background-color: var(--background-color);
   border-radius: 50%;
   transition: all 100ms ease-in-out;
@@ -232,128 +272,4 @@ h2.page-description {
 .icons:hover {
   color: white;
   background-color: var(--brand-color);
-}
-
-@media (max-width: 992px) {
-  .img-profile {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .about-page h1 {
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 768px) {
-  .h2 {
-    font-size: 15px;
-  }
-
-  .button-app-box {
-    display: flex;
-    justify-content: center;
-  }
-
-  .app-link {
-    margin: 0px 5px;
-  }
-
-  .recent-project {
-    margin: 10px 0px 20px 0px;
-  }
-
-  .app-description {
-    text-align: center;
-  }
-
-  .recent-project-image {
-    display: none;
-  }
-
-  .recent-project-description {
-    text-align: center;
-    font-size: 20px;
-    margin: 20px 0px;
-  }
-
-  h2.page-description,
-  .about-kim {
-    font-size: 20px;
-    margin: 20px 0px 10px 0px;
-    text-align: center;
-  }
-
-  .about-page {
-    text-align: center;
-  }
-
-  .about-page h1 {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 576px) {
-  h1 {
-    font-size: 50px;
-  }
-
-  h2 {
-    font-size: 15px;
-  }
-
-  .page-container {
-    padding-top: 20px;
-  }
-
-  .logo {
-    max-width: 50px;
-    margin-left: 5px;
-  }
-
-  .menu-main-item-link {
-    padding: 0 10px;
-  }
-
-  .hero a {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 350px) {
-  .content-container {
-    margin: 20px 20px 0px 20px;
-  }
-
-  .logo {
-    max-width: 35px;
-    margin-left: 2px;
-  }
-
-  .menu-main-item-link {
-    padding: 0 6px;
-    font-size: 14px;
-  }
-
-  .hero {
-    padding: 50px;
-  }
-
-  .button {
-    width: 100px;
-    margin-right: 5px;
-  }
-
-  .button-project-box {
-    width: 100%;
-  }
-
-  .footer-links {
-    margin: 0px 2px;
-    padding-top: 30px;
-  }
-
-  .contact-links {
-    font-size: 20px;
-  }
 }

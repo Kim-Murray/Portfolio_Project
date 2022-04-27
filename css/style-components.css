@@ -1,20 +1,58 @@
-/* Headings */
+/* Headings/Text */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+}
 
 h1 {
-  font-size: 70px;
+  font-size: 7rem;
   font-weight: bold;
   color: var(--brand-color);
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 100;
   margin: 0;
 }
 
 h3 {
-  font-size: 30px;
+  text-align: center;
+  font-size: 3rem;
   font-weight: 400;
+}
+
+h4 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 3.5rem;
+  text-align: left;
+  margin: 0px;
+}
+
+p.small {
+  font-size: 1.2rem;
+}
+
+a {
+  font-size: 1.8rem;
+}
+
+a.small {
+  font-size: 1.2rem;
+}
+
+.text-light {
+  color: rgb(153, 152, 152);
 }
 
 /* Buttons */
@@ -22,16 +60,18 @@ h3 {
 .button {
   display: flex;
   justify-content: center;
+  margin: 2rem;
   font-family: var(--heading-font-family);
   color: white;
   background-color: var(--brand-color);
   border: 1px solid var(--brand-color);
   text-decoration: none;
-  width: 120px;
-  padding: 20px 25px;
+  width: 12rem;
+  padding: 2rem 2.5rem;
   border-radius: 4px;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: medium;
+  transition: all 0.3s ease-in-out;
 }
 
 .button:hover {
