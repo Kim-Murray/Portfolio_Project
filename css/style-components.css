@@ -1,0 +1,40 @@
+/* Headings */
+
+h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: var(--brand-color);
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* Buttons */
+
+.button {
+  display: flex;
+  justify-content: center;
+  font-family: var(--heading-font-family);
+  color: white;
+  background-color: var(--brand-color);
+  border: 1px solid var(--brand-color);
+  text-decoration: none;
+  width: 120px;
+  padding: 20px 25px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: medium;
+}
+
+.button:hover {
+  color: var(--brand-color);
+  background-color: white;
+  border: 1px solid var(--brand-color);
+}
