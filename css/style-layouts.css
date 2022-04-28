@@ -174,13 +174,6 @@ section {
   max-width: 80%;
 }
 
-.project-link {
-  flex: 0 0 50%;
-  align-self: auto;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .project-img {
   display: inline-block;
   max-width: 100%;
@@ -199,7 +192,7 @@ section {
 
 .project-links {
   display: flex;
-  flex-wrap: wrap;
+
   margin: 1rem 1rem;
 }
 
@@ -242,10 +235,6 @@ h2.section-title {
 }
 
 .about-title {
-  margin: 0;
-}
-
-.about-sub-title {
   margin: 0;
 }
 
@@ -365,6 +354,12 @@ footer {
   }
 }
 @media (max-width: 350px) {
+  .project-links {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+  }
+
   .about-small {
     display: flex;
     flex-direction: column;
