@@ -170,10 +170,6 @@ section {
   margin: 2rem;
 }
 
-.project-description {
-  max-width: 80%;
-}
-
 .project-img {
   display: inline-block;
   max-width: 100%;
