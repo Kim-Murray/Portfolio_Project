@@ -192,7 +192,6 @@ section {
 
 .project-links {
   display: flex;
-
   margin: 1rem 1rem;
 }
 
@@ -286,8 +285,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 6rem;
-  margin: 0 1rem;
+  margin: 4rem;
 }
 
 .footer-email {
@@ -375,4 +373,10 @@ footer {
   .about-small-title {
     text-align: center;
   }
+}
+
+/* Utilities */
+
+.reduce-margin-top {
+  margin-top: 0rem;
 }

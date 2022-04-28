@@ -59,6 +59,7 @@ a.small {
 .button {
   display: flex;
   justify-content: center;
+  text-align: center;
   margin: 2rem;
   font-family: var(--heading-font-family);
   color: white;
